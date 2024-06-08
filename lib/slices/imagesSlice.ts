@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 export interface ImageType {
+  searchType: "images" | "videos"
   images: ImageInterface[]
   model: boolean,
   imageDetails: ImageInterface | null,
@@ -10,15 +11,18 @@ export interface ImageType {
 }
 
 const initialState: ImageType = {
+  searchType: "images",
   images:[],
   model:false,
   imageDetails: null,
   loader: false
   
+  
 
 }
 
 export const imageSlice = createSlice({
+
   name: 'image',
   initialState,
   reducers: {
@@ -37,10 +41,13 @@ export const imageSlice = createSlice({
     },
     setLoader: (state) => {
       state.loader = !state.loader
-          }
+          },
+    setSearchType: (state, {payload}) => {
+      state.searchType = payload 
+    }
 }})
 
 // Action creators are generated for each case reducer function
-export const { setImages, toggleModel, setImageDetails, setLoader } = imageSlice.actions
+export const { setImages, toggleModel, setImageDetails, setLoader, setSearchType } = imageSlice.actions
 
 export default imageSlice.reducer
