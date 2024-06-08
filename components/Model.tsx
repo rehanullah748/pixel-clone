@@ -39,6 +39,7 @@ const Model = () => {
             <span><LiaCommentSolid className='text-gray-500' size={22} /></span>       
             <span>Comments</span>
             <span className='text-gray-400'>{imageDetails?.comments}</span>
+            {/* this is testing */}
            
           </span>
           <span className='px-5 py-3 rounded-lg text-lg font-medium border border-gray-300 flex items-center space-x-2'>
