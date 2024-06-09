@@ -17,7 +17,7 @@ dispatch(setSearchType(value))
   return (
     <div>
       <Select defaultValue={"images"} onValueChange={changeOptions}>
-  <SelectTrigger className="w-[180px]">
+  <SelectTrigger className="w-[100px] md:w-[140px]">
     <SelectValue />
   </SelectTrigger>
   <SelectContent>

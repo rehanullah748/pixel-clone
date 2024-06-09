@@ -54,7 +54,7 @@ const Main = () => {
   // Search()
  }, [])
   return (
-    <div className='relative bg-[url("/bg.jpg")] bg-cover bg-no-repeat flex items-center justify-center  h-[500px] '>
+    <div className='relative bg-[url("/mobile.jpg")] md:bg-[url("/bg.jpg")] bg-cover bg-no-repeat flex items-center justify-center  h-[500px] '>
       <Navebar/>
       <div>
         <h1 className='text-[27px] md:text-[35px] font-bold text-white px-3 lg:px-0 leading-[27px] '>Stunning royalty-free images & royalty-free stock</h1>
